@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=PQ Chat
+GenericName=Encrypted Messenger
+Comment=Chat peer-to-peer over a post-quantum, forward-secret encrypted channel
+Exec=pqchat
+Icon=pqchat
+Terminal=false
+Categories=Network;InstantMessaging;Chat;Security;GTK;
+Keywords=chat;message;messenger;p2p;encrypt;post-quantum;kyber;ratchet;security;
+StartupNotify=true
+StartupWMClass=pqchat

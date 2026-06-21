@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <!-- Dark cyber background, matching the app theme (#070b12 / #0e1726). -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1726"/>
+      <stop offset="1" stop-color="#070b12"/>
+    </linearGradient>
+    <!-- Neon cyan -> green, matching the suite. -->
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset="1" stop-color="#39ff14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#00e5ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded background tile. -->
+  <rect x="0" y="0" width="256" height="256" rx="52" fill="url(#bg)"/>
+  <rect x="3" y="3" width="250" height="250" rx="50" fill="none"
+        stroke="#00e5ff" stroke-opacity="0.55" stroke-width="3"/>
+  <circle cx="128" cy="128" r="96" fill="url(#glow)"/>
+
+  <!-- Back chat bubble (incoming / peer). -->
+  <g>
+    <path d="M150 56 H210 a14 14 0 0 1 14 14 V120 a14 14 0 0 1 -14 14 H188
+             l-2 0 -14 18 0 -18 H150 a14 14 0 0 1 -14 -14 V70
+             a14 14 0 0 1 14 -14 Z"
+          fill="#0c1a2b" stroke="url(#flow)" stroke-width="5"/>
+    <circle cx="166" cy="95" r="6" fill="url(#flow)"/>
+    <circle cx="186" cy="95" r="6" fill="url(#flow)"/>
+    <circle cx="206" cy="95" r="6" fill="url(#flow)"/>
+  </g>
+
+  <!-- Front chat bubble (outgoing / you). -->
+  <g>
+    <path d="M46 116 H106 a14 14 0 0 1 14 14 V180 a14 14 0 0 1 -14 14 H84
+             l-14 18 0 -18 H46 a14 14 0 0 1 -14 -14 V130
+             a14 14 0 0 1 14 -14 Z"
+          fill="#08111c" stroke="url(#flow)" stroke-width="5"/>
+  </g>
+
+  <!-- PQ shield centred on the front bubble (post-quantum). -->
+  <g transform="translate(76,156)">
+    <path d="M0 -26 L21 -17 L21 3 Q21 22 0 30 Q-21 22 -21 3 L-21 -17 Z"
+          fill="#070b12" stroke="url(#flow)" stroke-width="4.5"/>
+    <text x="0" y="9" text-anchor="middle" font-family="monospace"
+          font-size="23" font-weight="bold" fill="url(#flow)">Q</text>
+  </g>
+</svg>
