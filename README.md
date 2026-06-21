@@ -2,7 +2,8 @@
 
 <img src="data/pqchat-128.png" width="96" alt="PQ Chat">
 
-# PQ Chat
+<a href="https://github.com/effjy/pq-chat/"><img src="titles/pq-chat-title.svg" height="52" alt="PQ-Chat"></a>
+
 
 **Talk directly to another machine over an end-to-end encrypted, post-quantum
 channel with *forward secrecy* — no server, no cloud, no account.**
