@@ -19,7 +19,7 @@ channel with *forward secrecy* — no server, no cloud, no account.**
 <br>
 
 <!-- Take your own screenshot of the running app and save it here as screenshot.png -->
-<img src="screenshot.png" width="720" alt="PQ Chat screenshot">
+<img src="screenshot.png" width="800" alt="PQ Chat screenshot">
 
 </div>
 
